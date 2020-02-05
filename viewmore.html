@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/poppery.min.js"></script>
+    <script src="js/qwery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+        img{
+           width:500px;
+            height:500px;
+
+
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="container-fluid row">
+    <div class="col-4">
+        <img src="images/lentsit2.jpeg" alt="" class="img-thumbnail">
+        <p>SITTING ROOM</p>
+    </div>
+    <div class="col-4">
+        <img src="images/rental6.jpeg" alt="" class="img-thumbnail">
+        <p>Room</p>
+    </div>
+    <div class="col-4">
+        <img src="images/lenttoi3.jpeg" alt="" class="img-thumbnail">
+        <p>Bathroom</p>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2>INFO</h2>
+
+<button class="accordion">Description</button>
+<div class="panel">
+    <p><button style="background-color:palegreen;">3 bedrooms</button>
+        <button style="background-color:orange;">2 bathrooms</button>
+        <button style="background-color:olive;">Kitchen</button>
+        <button style="background-color:deepskyblue;">balcony</button>
+
+
+
+    </p>
+</div>
+
+<button class="accordion">Details</button>
+<div class="panel">
+    <p>Located in prestine environment with access to schools, hospital,mall and other social amenities.30 km from nairobi.</p>
+</div>
+
+<button class="accordion">OWNER</button>
+<div class="panel">
+    <p>Expo realtors.</p>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
